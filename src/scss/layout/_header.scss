@@ -6,11 +6,25 @@
     background-color: rgba(16, 159, 161, 1);
 }
 
-.logo {
+.logoMaria {
     padding: 18px 40px;
+    @media all and (max-width:960px) { 
+        display: none;
+}
 }
 
+.logoMmg {
+    padding: 18px 32px;
+    @media all and (min-width:961px) { 
+        display: none;
+}
+}
+
+
 .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 30px;
 }
 
@@ -26,4 +40,3 @@
     font-size: 18px;
     text-decoration: unset;
 }
-
