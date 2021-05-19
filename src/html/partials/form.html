@@ -1,5 +1,5 @@
 <form action="" method="post" name="formContact" id="formContact">
-    <div>
+    <div class="dataField">
         <label for="fullName">Name</label>
         <input id="fullName" type="text" name="fullName" required/>
         <label for="emailAddress">Email</label>
@@ -7,8 +7,10 @@
         <label for="telephone">Phone</label>
         <input type="tel" id="telephone" name="telephone"/>
         <label for="message">Message</label>
-        <textarea id="message"name="message"rows="8"cols="80"></textarea>
+        <textarea id="message"name="message"rows="8"cols="90"></textarea>
     </div>
-    <input type="reset" value="Reset"class="btReset"/>
-    <input type="submit" value="Submit" class="btSubmit"/>  
+    <div class="btForm">
+        <input type="reset" value="Reset"class="btReset"/>
+        <input type="submit" value="Submit" class="btSubmit"/>  
+    </div>  
 </form>

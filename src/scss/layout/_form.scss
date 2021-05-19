@@ -1,0 +1,27 @@
+#formContact {
+    background-color: $lightColor;
+    box-sizing: border-box;
+}
+
+.dataField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullName {
+    width: 860px;
+    height: 50px;
+    border-radius: 5px;
+    border: $border-field;
+    @include textForm ($primaryColor, $secondaryColor)
+}
+
+
+
+.btForm { 
+    display: flex;
+    flex-direction: row;
+}
+
