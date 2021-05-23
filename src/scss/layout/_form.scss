@@ -1,27 +1,73 @@
 #formContact {
     background-color: $lightColor;
-    box-sizing: border-box;
+    padding-top: 45px;
 }
 
 .dataField {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-#fullName {
+#fullName, #emailAddress, #telephone {
     width: 860px;
     height: 50px;
     border-radius: 5px;
     border: $border-field;
-    @include textForm ($primaryColor, $secondaryColor)
+    margin-bottom: 31px;
+    @media all and (max-width:600px) {
+        width: 499px;
+    }
 }
 
+.field {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
 
+#message {
+    width: 860px;
+    height: 98px;
+    border-radius: 5px;
+    border: $border-field;
+    margin-bottom: 31px;
+    @media all and (max-width:600px) {
+        width: 499px;
+    }
+}
+
+label {
+    margin: 5px;
+    @include textForm($bgColor, $primaryColor);
+}
 
 .btForm { 
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    height: 47px;
+    width: 860px;
+    @media all and (max-width:600px) {
+        width: 499px;
+    }
 }
 
+.btReset, .btSubmit {
+    width: 133px;
+    @include textForm($bgColor, $primaryColor);
+    border-radius: 35px;
+    text-align: center;
+    border: none;
+}
+
+.btReset {
+    background-color: $reset;
+    margin-right: 10px;
+    color: $primaryColor;
+}
+
+.btSubmit {
+    background-color: $secondaryColor;
+    color: $bgColor;
+}

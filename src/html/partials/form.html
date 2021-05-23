@@ -1,16 +1,24 @@
 <form action="" method="post" name="formContact" id="formContact">
     <div class="dataField">
-        <label for="fullName">Name</label>
-        <input id="fullName" type="text" name="fullName" required/>
-        <label for="emailAddress">Email</label>
-        <input id="emailAddress" type="email" name="emailAddress"required/>
-        <label for="telephone">Phone</label>
-        <input type="tel" id="telephone" name="telephone"/>
-        <label for="message">Message</label>
-        <textarea id="message"name="message"rows="8"cols="90"></textarea>
-    </div>
-    <div class="btForm">
-        <input type="reset" value="Reset"class="btReset"/>
-        <input type="submit" value="Submit" class="btSubmit"/>  
+        <div class="field">
+            <label for="fullName">Name</label>
+            <input id="fullName" type="text" name="fullName" required/>
+        </div>
+        <div class="field">
+            <label for="emailAddress">Email</label>
+            <input id="emailAddress" type="email" name="emailAddress"required/>
+        </div>
+        <div class="field">
+            <label for="telephone">Phone</label>
+            <input type="tel" id="telephone" name="telephone"/>
+        </div>
+        <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message"name="message"rows="8"cols="15"></textarea>
+        </div>
+        <div class="btForm">
+            <input type="reset" value="Reset"class="btReset"/>
+            <input type="submit" value="Submit" class="btSubmit"/>  
+        </div>  
     </div>  
 </form>
